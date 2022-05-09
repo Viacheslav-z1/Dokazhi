@@ -7,7 +7,52 @@
 
 
 
+.header{
+  background-color: #1A3D8A;
+  padding: 10px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+  }
+  &__descr{
+    max-width: 128px;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
+.menu{
+
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding: 0 25px;
+  }
+  &__link{
+    color: #fff;
+    transition: all .5s;
+    &:hover{
+      color: #00BF96;
+    }
+  }
+}
+
+.phone{
+  display: flex;
+  align-items: center;
+  &__link{
+    margin-right: 10px;
+    color: #fff;
+    letter-spacing: 2%;
+  }
+}
 
 
 

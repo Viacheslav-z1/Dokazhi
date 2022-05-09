@@ -1,0 +1,13 @@
+body{
+  color: #fff;
+  @extend %roboto-400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+
+.container{
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

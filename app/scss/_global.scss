@@ -3,11 +3,38 @@ body{
   @extend %roboto-400;
   font-size: 20px;
   line-height: 27px;
+  height: 100%;
+}
+html{
+  height: 100%;
 }
 
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.main{
+  flex-grow: 1;
+}
 .container{
   max-width: 1220px;
   padding: 0 10px;
+  margin: 0 auto;
+}
+.title{
+  @extend %bebas-700;
+  color: #212121;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.descr{
+  @extend %roboto-300;
+  color: #212121;
+  text-align: center;
+  max-width: 950px;
   margin: 0 auto;
 }

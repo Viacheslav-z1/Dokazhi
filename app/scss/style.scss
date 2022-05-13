@@ -148,6 +148,17 @@
      width: 100%;
      margin-right: 50px;
      height: 100%;
+     position: relative;
+   }
+   &__slider-nums{
+     position: absolute;
+     left: 155px;
+     bottom: -4px;
+     color: #333333;
+     @extend %roboto-500;
+     font-size: 19px;
+     line-height: 27px;
+     z-index: 999;
    }
    &__name{
      @extend %roboto-500;
@@ -183,6 +194,10 @@
      padding: 15px 60px;
      background-color: #1A3D8A;
      position: relative;
+     transition: all .5s;
+     &:hover{
+       background-color: #4074E4;
+     }
    }
    &__sevices{
      font-size: 19px;
@@ -197,7 +212,7 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
-      bottom: 50px;
+      bottom: 43px;
       position: absolute;
    }
      .slick-next{
@@ -207,6 +222,11 @@
       left: 50px;
       z-index: 10;
      }
+    button.slick-disabled {
+      path {
+        fill: #C4C4C4;
+      }
+    }
      .slick-dots{
        display: flex;
        position: absolute;
@@ -215,7 +235,7 @@
        li{
          display: none;
          &::after{
-           content: '/ 4';
+           content: '/';
            color: #333333;
            @extend %roboto-500;
            font-size: 19px;
@@ -237,6 +257,7 @@
         }
        }
      }
+     
 }
 
 

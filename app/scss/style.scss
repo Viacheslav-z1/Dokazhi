@@ -357,6 +357,21 @@
     width: 295px;
     padding: 20px 20px 20px 78px;
     border-radius: 15px;
+    transition: ease .2s;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.01);
+      &:nth-child(even) {
+        &::before {
+          right: -52px;
+        }
+      }
+      &:nth-child(odd) {
+        &::before {
+          left: -52px;
+        }
+      }
+    }
     &:nth-child(even) {
       position: relative;
       background: linear-gradient(270deg, #1D4396 0%, #1A3D8A 100%), #1D4396;
@@ -380,6 +395,7 @@
         background-image: url('../images/icons/elipse.svg');
         width: 28px;
         height: 28px;
+        transition: ease .2s;
       }
     }
     &:nth-child(odd) {
@@ -406,6 +422,7 @@
         background-image: url('../images/icons/elipse.svg');
         width: 28px;
         height: 28px;
+        transition: ease .2s;
       }
     }
   }
@@ -648,6 +665,69 @@
     }
   }
 }
+
+.aplication{
+  padding: 70px 0px 40px;
+  background-color: #1A3D8A;
+  &__title{
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  &__form{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  &__form-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 50px;
+  }
+  &__form-input__style{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    max-width: 300px;
+    width: 100%;
+    color: #fff;
+    font-size: 19px;
+    @extend %roboto-400;
+    outline: none;
+    padding: 5px 5px 5px 0px;
+    &::placeholder{
+      @extend %roboto-400;
+      color: #fff;
+      font-size: 19px;
+    }
+  }
+  &__form-question,
+  &__form-num{
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  &__form-btn{
+    display: block;
+    margin: 0 auto;
+    @extend %btn;
+    padding: 15px 45px;
+    border: none;
+    cursor: pointer;
+  }
+  &__info{
+    text-align: center;
+    font-size: 13px;
+    @extend %roboto-300;
+    line-height: 25px;
+    letter-spacing: 2%;
+    a{
+      @extend %roboto-300;
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
 
 .footer{
   color: #212121;

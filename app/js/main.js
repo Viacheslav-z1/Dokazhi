@@ -13,4 +13,15 @@ $(function () {
     $(this).toggleClass('active').next().slideToggle(300);
   });
   $('.question__name-1').trigger('click');
+
+  wow = new WOW(
+    {
+      boxClass: 'wow',      // default
+      animateClass: 'animate__animated', // default
+      offset: 0,          // default
+      mobile: false,       // default
+      live: true        // default
+    }
+  )
+  wow.init();
 })

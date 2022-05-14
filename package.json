@@ -9,6 +9,7 @@
   "author": "Zalotnyi Viacheslav",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -17,7 +18,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "wow.js": "^1.2.2"
   },
   "dependencies": {
     "del": "^6.0.0",

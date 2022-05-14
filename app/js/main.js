@@ -7,4 +7,10 @@ $(function () {
     dots: true,
     infinite: false,
   });
+  
+  $('.question__name').on('click', function () {
+    $('.question__name').not($(this)).removeClass('active').next().slideUp(300);
+    $(this).toggleClass('active').next().slideToggle(300);
+  });
+  $('.question__name-1').trigger('click');
 })

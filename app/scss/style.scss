@@ -310,6 +310,116 @@
   }
 }
 
+.order{
+  padding: 70px 0;
+  background-color: #1A3D8A;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text{
+    max-width: 387px;
+  }
+  &__name{
+    @extend %bebas-700;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &__descr,
+  &__link{
+    @extend %roboto-300;
+    font-size: 17px;
+    color: #fff;
+  }
+  &__road{
+    max-width: 670px;
+    width: 100%;
+  }
+  &__list{
+   width: 670px;
+   position: relative;
+   &::after{
+     content: '';
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: -40px;
+     width: 2px;
+     height: 235px;
+     background-image: url('../images/icons/line.svg');
+   }
+  }
+  &__item{
+    width: 295px;
+    padding: 20px 20px 20px 78px;
+    border-radius: 15px;
+    &:nth-child(even) {
+      position: relative;
+      background: linear-gradient(270deg, #1D4396 0%, #1A3D8A 100%), #1D4396;
+      box-shadow: 0px 0px 40px rgba(26, 61, 138, 0.2);
+    &::after {
+        content: '';
+        position: absolute;
+        right: -1px;
+        width: 15px;
+        height: 15px;
+        background-color: #1D4396;
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        right: -54px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../images/icons/elipse.svg');
+        width: 28px;
+        height: 28px;
+      }
+    }
+    &:nth-child(odd) {
+    margin-left: auto;
+    position: relative;
+    background: linear-gradient(40deg, #1D4396 0%, #1A3D8A 100%), #1D4396;
+    box-shadow: 0px 0px 40px rgba(26, 61, 138, 0.2);
+    &::after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        width: 15px;
+        height: 15px;
+        background-color: #1D4396;
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        left: -54px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../images/icons/elipse.svg');
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  &__item-name{
+    color: #00BF96;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  &__item-text{
+    font-size: 19px;
+
+  }
+}
 
 .price{
   background-color: #E5E5E5;

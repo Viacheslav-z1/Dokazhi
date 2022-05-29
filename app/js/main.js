@@ -1,5 +1,10 @@
 $(function () {
 
+  $('.menu__btn, .menu__list').on('click', function () {
+    $('.menu__list').toggleClass('menu__list-active');
+    $('.menu__btn').toggleClass('menu__btn-active');
+  });
+
 
     $(".menu__list a").on("click", function (event) {
       event.preventDefault();
@@ -14,6 +19,15 @@ $(function () {
     fade: true,
     dots: true,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          arrows: false,
+          dots: false,
+        }
+      },
+    ]
   });
   
   $('.question__name').on('click', function () {
